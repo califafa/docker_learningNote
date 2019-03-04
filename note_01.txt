@@ -15,3 +15,7 @@ docker commit -m="" -a="" [container_id] [image_name]                       //co
 docker export [container_id] > [filename.tar]                               //export my container
 
 docker import - [container_name] < [filename.tar]                           //import my exported container
+
+docker rmi [image_name]                                                     //delete image
+
+docker rm [container_id]                                                    //delete container
