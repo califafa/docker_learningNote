@@ -1,0 +1,17 @@
+systemctl start docker.service                                              //start docker service (in manjaro)
+
+docker search [image_name]                                                  //search image online
+
+docker pull [online_image_name]                                             //download online image
+
+docker images                                                               //view local images
+
+docker ps -a                                                                //view containers and container id , -a can see all
+
+docker run -t -i ubuntu /bin/bash                                           //run /bin/bash in image ubuntu 
+
+docker commit -m="" -a="" [container_id] [image_name]                       //commit a container as a image , -m is description, -a is user
+
+docker export [container_id] > [filename.tar]                               //export my container
+
+docker import - [container_name] < [filename.tar]                           //import my exported container
