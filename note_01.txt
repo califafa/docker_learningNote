@@ -19,3 +19,5 @@ docker import - [container_name] < [filename.tar]                           //im
 docker rmi [image_name]                                                     //delete image
 
 docker rm [container_id]                                                    //delete container
+
+docker inspect [container_id]                                               //view container's ip and other config info
